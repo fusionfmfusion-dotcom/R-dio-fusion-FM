@@ -1,50 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fusion FM</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(90deg, #ff0077, #ffcc00);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background: #000;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      border-bottom: 2px solid #ff0077;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .player {
+      text-align: center;
+      margin: 15px 0;
+    }
+    audio {
+      width: 100%;
+      max-width: 400px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 5px 0;
+    }
+    footer {
+      background: #222;
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Fusion FM</h1>
-    <nav>
-      <a href="#home">Início</a>
-      <a href="#programacao">Programação</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <p>A sua rádio online!</p>
   </header>
 
-  <main id="home">
-    <h2>Ouça ao vivo</h2>
-    <audio controls autoplay>
-      <source src="https://stream.zeno.fm/5h2m1muayy8uv" type="audio/mpeg" />
-      Seu navegador não suporta áudio.
-    </audio>
-  </main>
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#programacao">Programação</a>
+    <a href="#locutores">Locutores</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="home">
+    <h2>Ao Vivo 🎶</h2>
+    <div class="player">
+      <audio controls autoplay>
+        <source src="https://stream.zeno.fm/5h2m1muayy8uv" type="audio/mpeg">
+        Seu navegador não suporta o player de áudio.
+      </audio>
+    </div>
+    <p>Bem-vindo à Fusion FM! Fique ligado em nossa programação e curta o melhor da música.</p>
+  </section>
 
   <section id="programacao">
-    <h2>Programação</h2>
+    <h2>📅 Programação</h2>
+    <h3>Segunda a Sábado</h3>
     <ul>
       <li>00:00 – Fusion Light Show</li>
+      <li>02:00 – Programação Musical</li>
+      <li>06:00 – Programação Musical com o trânsito no RJ</li>
       <li>07:00 – Fusion News</li>
-      <li>13:00 – Sequência Yees (Rodrigo Campos)</li>
-      <li>21:00 – A Voz do Brasil</li>
+      <li>09:00 – Fusion Play (2 horas de música)</li>
+      <li>11:00 – Qual é a sua?</li>
+      <li>13:00 – Sequência Yees – uma hora de músicas sem intervalos (Rodrigo Campos)</li>
+      <li>14:00 – Fusion Play (2 horas de música)</li>
+      <li>16:00 – Arena Fusion!</li>
+      <li>18:00 – Bônus Fusion (meia hora de música)</li>
+      <li>18:30 – Fusion Play</li>
+      <li>20:00 – Top Fusion!</li>
+      <li>21:00 – Flagras Fusion – 2ª edição</li>
+      <li>23:00 – Sequência Yees – uma hora de músicas sem intervalos (Priscilla Cardena)</li>
+    </ul>
+
+    <h3>Domingo</h3>
+    <ul>
+      <li>00:00 – Fusion Light Show</li>
+      <li>02:00 – Programação Musical</li>
+      <li>06:00 – Programação Musical com o trânsito no RJ</li>
+      <li>07:00 – Fusion News</li>
+      <li>09:00 – Fusion Play (2 horas de música)</li>
+      <li>11:00 – Qual é a sua?</li>
+      <li>13:00 – Sequência Yees – uma hora de músicas sem intervalos (Rodrigo Campos)</li>
+      <li>14:00 – Fusion Play (2 horas de música)</li>
+      <li>16:00 – Arena Fusion!</li>
+      <li>18:00 – Bônus Fusion (meia hora de música)</li>
+      <li>18:30 – Fusion Play</li>
+      <li>20:00 – Programação Musical</li>
+      <li>21:00 – Flagras Fusion – 2ª edição</li>
+      <li>23:00 – Sequência Yees – uma hora de músicas sem intervalos (Priscilla Cardena)</li>
     </ul>
   </section>
 
+  <section id="locutores">
+    <h2>🎤 Locutores</h2>
+    <p>Em breve, conheça nossa equipe de locutores que trazem energia e música para sua programação!</p>
+  </section>
+
   <section id="contato">
-    <h2>Contato</h2>
-    <p>Email: contato@fusionfm.com.br</p>
-    <p>WhatsApp: (21) 99999-9999</p>
+    <h2>📞 Contato</h2>
+    <p>Entre em contato pelo WhatsApp: <strong>(21) 99999-9999</strong></p>
   </section>
 
   <footer>
-    <p>Siga a Fusion FM</p>
-    <a href="https://www.facebook.com/share/17B68dssLp/" target="_blank">Facebook</a> |
-    <a href="https://www.instagram.com/fm_fusion" target="_blank">Instagram</a> |
-    <a href="https://www.tiktok.com/@fusionfm1" target="_blank">TikTok</a>
+    <p>&copy; 2024 Fusion FM - Todos os direitos reservados.</p>
   </footer>
+
 </body>
 </html>
